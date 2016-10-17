@@ -16,7 +16,6 @@
 #define BLANK 0xfe
 
 /* プロトタイプ宣言 */
-//あれ
 void lcd_write(unsigned char rs, unsigned char data, int fd);
 void lcd_set(int fd);
 void remove_newline(char *str);
