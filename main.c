@@ -26,7 +26,6 @@ BLOG : https://beanlog.wordpress.com/
 /* 基礎関数 */
 int setI2c(int *fd);//i2c通信の初期設定
 void lcdSet(int fd);//LCDの初期設定
-void rmNewline(char *str);//文字列から改行文字を消す
 void setCursor(int fd, int n);//カーソル移動
 void clearDisplay(int fd);//LCDのディスプレイを綺麗にする
 void lcdWrite(int fd, unsigned char rs, unsigned char data);//LCDにデータを書きこむ
@@ -42,7 +41,7 @@ void strReverse(char *sstr, char *str);//文字列反転させる
 
 int main(int argc, char *argv[]) {
 
-  int fd;//ファイルディスクプリタ
+  int fd;//ファイルディスクリプタ
   char str[MAX_CHAR];
 
   if(!setI2c(&fd)) return 1;
@@ -93,16 +92,6 @@ void lcdSet(int fd){
 
   for(i = 0; i < 4; i++){
     lcdWrite(fd, LCD_RS_CMD, cmds[i]);
-  }
-}
-
-void rmNewline(char *str){
-  int i = 0;
-  while (str[i]) {
-    if(str[i] == '\n'){
-      str[i] = 0;
-    }
-    i++;
   }
 }
 
