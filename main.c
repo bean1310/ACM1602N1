@@ -4,7 +4,7 @@
 
 Made by BEAN
 
-BLOG : https://beanlog.wordpress.com/
+BLOG : https://beanlog.wordpress.com/2016/12/04/raspberry-pi-3-%e3%81%a7lcd%ef%bc%88acm1602ni-flw-fbw%ef%bc%89/
 
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
